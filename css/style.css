@@ -10,25 +10,80 @@ body {
   margin: 0 auto;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding-top: 27px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ebebeb;
 }
-.logo a {
+.header__logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-.logo span {
+.header__logo span {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   color: #666666;
   margin-left: 12px;
 }
-.burger {
-  font-size: 40px;
+
+.menu__btn {
+  width: 35px;
+  height: 29px;
+  font-size: 0;
+  border: 0;
+  padding: 0;
+  outline: none;
+  background: none;
+  background-image: url("../img/burger-btn.png");
+  background-repeat: no-repeat;
 }
-.nav-menu {
+.menu nav {
   display: none;
+}
+
+.order__container {
+  display: flex;
+}
+
+.order__text {
+  margin: 0;
+}
+
+.order__slogan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.order__slogan::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 95px;
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+.order__slogan h3 {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #333740;
+}
+.order__slogan span {
+  font-family: Raleway, sans-serif;
+  display: block;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #333740;
 }
